@@ -1,7 +1,7 @@
 import streamlit as st
 
 
-st.title('🦜🔗 Quickstart App')
+st.title('🦜🔗 Hawaar-al-Zaki')
 
 from langchain.document_loaders import DirectoryLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
@@ -19,7 +19,7 @@ from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 
 
 embeddings = HuggingFaceInstructEmbeddings()
-db = FAISS.load_local("E:/D/Faiza/PhD/Umrah Competition/db", embeddings)
+db = FAISS.load_local("db", embeddings)
 
 os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
 repo_id = "mistralai/Mistral-7B-Instruct-v0.1"
