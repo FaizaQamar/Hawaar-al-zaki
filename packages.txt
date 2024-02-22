@@ -1,9 +1,0 @@
-!pip install langchain[all]
-!pip install faiss-gpu
-!pip install openai
-!pip install huggingface_hub
-!pip install transformers
-!pip install streamlit
-!pip install unstructured
-!pip install InstructorEmbedding
-!pip install sentence_transformers==2.2.2
